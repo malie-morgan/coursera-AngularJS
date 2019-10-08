@@ -9,7 +9,7 @@
         $scope.data = false;
         $scope.error = false;
         $scope.checkIfTooMuch = function () {
-            if ($scope.dishes.trim().replace(/^\W/, '').length <= 0) {                                  //.replace(/^\W/, '') regex using not operator
+            if ($scope.dishes.trim().replace(/^\W+/, '').length <= 0) {                        //.replace(/^\W+/, '') regex using Not operator- does not accept non-word characters
                 $scope.message = "Please enter lunch dishes first!";
                 $scope.data = false;
                 $scope.error = true;
