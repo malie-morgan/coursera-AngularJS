@@ -17,7 +17,7 @@
             else {
                 $scope.data = true;
                 $scope.error = false;
-                if ($scope.dishes.trim().split(', ').length <= 3) {
+                if ($scope.dishes.trim().split(', ').length > 0 && <= 3) {
                     $scope.message = "Enjoy!";
                 }
                 else {
