@@ -5,9 +5,9 @@
 
     function LunchCheckController($scope) {
         $scope.dishes = "";
-        $scope.message = "";
-        $scope.data = false;
-        $scope.error = false;
+       // $scope.message = "";
+       // $scope.data = false;
+       // $scope.error = false;
         $scope.checkIfTooMuch = function () {
             if ($scope.dishes.trim().split(', ').length <= 0) {
                 $scope.message = "Please enter lunch dishes first!"
