@@ -24,7 +24,6 @@
         }
     ];
 
-    var purchasedShoppingList = [];
     var buyList = shoppingList;
     var boughtList = [];
 
