@@ -1,0 +1,11 @@
+
+<ol>
+    <li ng-repeat="item in menu.items">
+        {{ item.name }} {{ item.short_name }} {{ item.description }}
+        <div class="error"><ng-transclude></ng-transclude></div>
+        <button ng-click="menu.onRemove({index: $index});">Don't want this one!</button>
+    </li>
+</ol>
+<div ng-if="menu.nothingFound()" class="error">Nothing Found</div>
+
+
